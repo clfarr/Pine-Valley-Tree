@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Pine Valley Tree Services</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>🌲 Pine Valley Tree Services</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch for a free quote or to place an order</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p>(555) 123-4567</p>
+                        <p class="note">Mon-Sat: 7am-6pm</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@pinevalleytree.com</p>
+                        <p class="note">We respond within 24 hours</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Location</h3>
+                        <p>123 Forest Road</p>
+                        <p>Pine Valley, USA 12345</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🚨</div>
+                        <h3>Emergency</h3>
+                        <p>24/7 Storm Damage</p>
+                        <p class="note">(555) 123-TREE</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="forms-section">
+            <div class="container">
+                <div class="forms-grid">
+                    <!-- Quote Request Form -->
+                    <div class="form-container">
+                        <h2>Request a Free Quote</h2>
+                        <p>Fill out the form below and we'll get back to you within 24 hours</p>
+                        <form class="contact-form" id="quoteForm">
+                            <div class="form-group">
+                                <label for="quote-name">Name *</label>
+                                <input type="text" id="quote-name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-email">Email *</label>
+                                <input type="email" id="quote-email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-phone">Phone *</label>
+                                <input type="tel" id="quote-phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-address">Property Address *</label>
+                                <input type="text" id="quote-address" name="address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-service">Service Needed *</label>
+                                <select id="quote-service" name="service" required>
+                                    <option value="">Select a service...</option>
+                                    <option value="trimming">Tree Trimming/Pruning</option>
+                                    <option value="removal">Tree Removal</option>
+                                    <option value="stump">Stump Grinding</option>
+                                    <option value="emergency">Emergency Service</option>
+                                    <option value="consultation">Tree Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quote-message">Project Details *</label>
+                                <textarea id="quote-message" name="message" rows="5" placeholder="Please describe your tree service needs..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+                        </form>
+                    </div>
+
+                    <!-- Firewood Order Form -->
+                    <div class="form-container">
+                        <h2>Order Firewood</h2>
+                        <p>Place your firewood order for convenient delivery</p>
+                        <form class="contact-form" id="firewoodForm">
+                            <div class="form-group">
+                                <label for="fw-name">Name *</label>
+                                <input type="text" id="fw-name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-email">Email *</label>
+                                <input type="email" id="fw-email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-phone">Phone *</label>
+                                <input type="tel" id="fw-phone" name="phone" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-address">Delivery Address *</label>
+                                <input type="text" id="fw-address" name="address" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-wood-type">Wood Type *</label>
+                                <select id="fw-wood-type" name="woodType" required>
+                                    <option value="">Select wood type...</option>
+                                    <option value="oak">Oak (Premium)</option>
+                                    <option value="maple">Maple</option>
+                                    <option value="mixed">Mixed Hardwood</option>
+                                    <option value="cherry">Cherry</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-quantity">Quantity *</label>
+                                <select id="fw-quantity" name="quantity" required>
+                                    <option value="">Select quantity...</option>
+                                    <option value="face">Face Cord (1/3 cord)</option>
+                                    <option value="half">Half Cord</option>
+                                    <option value="full">Full Cord</option>
+                                    <option value="multiple">Multiple Cords</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-delivery">Delivery Preference *</label>
+                                <select id="fw-delivery" name="delivery" required>
+                                    <option value="">Select option...</option>
+                                    <option value="stacked">Stacked Delivery (+$50)</option>
+                                    <option value="dumped">Dumped Delivery</option>
+                                    <option value="pickup">Pick Up (Save $25)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fw-notes">Additional Notes</label>
+                                <textarea id="fw-notes" name="notes" rows="4" placeholder="Special instructions, preferred delivery date, etc..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit Firewood Order</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="form-note">
+                    <p><strong>Note:</strong> These forms are for demonstration purposes. In a live website, these would be connected to a backend service or email system to process submissions.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-hours">
+            <div class="container">
+                <h2>Business Hours</h2>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <strong>Monday - Friday</strong>
+                        <p>7:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="hours-item">
+                        <strong>Saturday</strong>
+                        <p>8:00 AM - 4:00 PM</p>
+                    </div>
+                    <div class="hours-item">
+                        <strong>Sunday</strong>
+                        <p>Closed (Emergency calls only)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pine Valley Tree Services</h3>
+                    <p>Your trusted local tree care professionals</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📧 info@pinevalleytree.com</p>
+                    <p>📍 Pine Valley, USA</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pine Valley Tree Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
