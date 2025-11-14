@@ -41,11 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Stats
         '.stat-item',
 
-        // Contact cards
-        '.contact-card',
-
-        // Form containers
-        '.form-container',
+        // Contact page sections
+        '.contact-info-wrapper',
+        '.hours-wrapper',
+        '.quote-wrapper',
+        '.firewood-wrapper',
 
         // About sections
         '.about-story',
