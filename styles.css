@@ -1209,3 +1209,52 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Scroll-triggered Animations */
+.fade-slide-up,
+.fade-slide-left,
+.fade-scale,
+.fade-pop {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-slide-up {
+    transform: translateY(50px);
+}
+
+.fade-slide-left {
+    transform: translateX(-50px);
+}
+
+.fade-scale {
+    transform: scale(0.9);
+}
+
+.fade-pop {
+    transform: scale(0.8);
+}
+
+.fade-slide-up.animate-in,
+.fade-slide-left.animate-in,
+.fade-scale.animate-in,
+.fade-pop.animate-in {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Card tilt effect */
+.service-card,
+.review-card,
+.benefit-card,
+.value-card {
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+/* Smooth transitions for parallax */
+.hero-split,
+.page-header {
+    transition: transform 0.1s ease-out;
+    will-change: transform;
+}
