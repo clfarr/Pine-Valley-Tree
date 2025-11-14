@@ -1,0 +1,57 @@
+{
+  "project": "Pine Valley Tree Services Website",
+  "hosting_preferences": {
+    "no_cost_services_only": true,
+    "excluded_providers": [
+      "Google Cloud Platform (GCP)",
+      "Google Cloud Storage",
+      "Google Cloud Functions",
+      "Google Cloud Run",
+      "Firebase Hosting (paid features)",
+      "Google App Engine"
+    ],
+    "preferred_alternatives": [
+      "GitHub Pages (free static hosting)",
+      "Netlify (free tier)",
+      "Vercel (free tier)",
+      "Cloudflare Pages (free tier)"
+    ]
+  },
+  "service_preferences": {
+    "forms": {
+      "no_google_cloud_apis": true,
+      "preferred_alternatives": [
+        "Formspree (free tier)",
+        "Netlify Forms (free tier)",
+        "Static form handling with free email services"
+      ]
+    },
+    "analytics": {
+      "no_google_analytics_360": true,
+      "preferred_alternatives": [
+        "Google Analytics 4 (free version only)",
+        "Plausible Analytics (if using free/open source)",
+        "Simple Analytics (free tier if available)",
+        "No analytics (acceptable)"
+      ]
+    },
+    "cdn": {
+      "no_google_cloud_cdn": true,
+      "preferred_alternatives": [
+        "Cloudflare (free tier)",
+        "Built-in CDN from free hosting providers"
+      ]
+    }
+  },
+  "deployment_preferences": {
+    "avoid_paid_services": true,
+    "static_hosting_only": true,
+    "no_serverless_functions_with_cost": true
+  },
+  "notes": [
+    "This website should remain 100% cost-free to host and operate",
+    "All services must have free tiers with no credit card requirement",
+    "No Google Cloud services that could incur charges should be used",
+    "Static hosting is preferred to avoid any backend costs"
+  ]
+}
